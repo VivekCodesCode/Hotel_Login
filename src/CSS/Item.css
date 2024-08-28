@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+body{
+    
+    
+}
+.nothing_found{
+    margin-top: 300px;
+    text-align: center;
+}
+hr{
+    width: 20%;
+    margin-left: 15px !important;
+}
+.hotel_cart {
+    display: flex;
+    align-items: center;
+    border: 0px solid #ccc;
+    padding: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 8px;
+    height: 100px;
+   margin-top: 40px;
+}
+.details {
+    flex: 1;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.subtitle {
+    font-size: 14px;
+    color: grey;
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 0.1px solid grey;
+    margin-left: 5px;
+    border-radius: 5px;
+    
+}
+.quantity button {
+    background-color: #f5f0f0;
+    border: none;
+    padding: 5px 10px;
+    size: 20px;
+    cursor: pointer;
+    width: 35px;
+}
+.quantity input {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+.image {
+    margin-left: 10px;
+}
+.image img {
+    width: 89px;
+    height: 80px;
+    border-radius: 4px;
+}
+.item_details{
+    display: flex;
+}
+.hotel_items_submit{
+    width: 20%;
+    margin: auto !important;
+    background-color: #7bcb5e;
+    border: none;
+    
+}
+.items_quantity_button{
+  background-color: aquamarine;
+}
+.hotel_cart_container{
+   background-color: aqua;
+   height: max-content;
+   background-color: rgb(244, 244, 244);
+  
+
+   overflow-y: scroll !important;
+}
+.hotel_cart_input{
+    background-color: #f5f0f0;
+    border:#f5f0f0;
+}
+@media (max-width: 480px) {
+    hr {
+        width: 90%;
+        margin-left: 15px !important;
+    }
+    .hotel_items_submit{
+        z-index: 3 !important;
+        width: 80%;
+        margin: auto !important;
+        
+    }
+}

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login_form{
+    position: relative;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+   margin: auto;
+   top: 26%;
+   
+}
+.hotel_cart_phone{
+    margin-left: 10px !important;
+    color: white;
+    
+}
+/* body{
+    background:  linear-gradient(135deg, #557867, #2b3c4d);
+    padding-bottom: 170px;
+} */
+.hotel_cart_name{
+    position: relative;
+    color: white !important;
+    width:80%;
+}
+
+.hotel_input_phone{
+    background: transparent !important;
+    margin-left: 10px !important;
+}
+body{
+    /* background: linear-gradient(135deg, #3e6251, #183b5d) !important; */
+    /* padding-bottom: 200px; */
+
+
+}
+.login{
+    border-radius: 17px;
+  /* margin-top: 10% !important; */
+   justify-content: center;
+   margin: auto;
+   box-shadow: rgba(139, 139, 150, 0.2) 0px 7px 29px 0px;
+   width: 40%;
+   height: 500px;
+   
+   background: linear-gradient(135deg, #426353, #2b3c4d);
+   opacity: 0.9;
+   
+} 
+
+.login_submit{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background-color: rgb(240, 166, 46);
+    border: none;
+    filter: drop-shadow(10px 30px 20px rgb(19, 19, 19));
+}
+
+.login_head{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 17%;
+    color: rgb(108, 124, 108);
+    margin-left: -6px;
+    font-size: 43px;
+    font-family:cursive;
+}
+
+@media (max-width: 600px) {
+    .login{
+        margin-top:20% !important;
+        width: 87%;
+    }
+}
+.login_wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}

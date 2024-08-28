@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.cards-detail>.tab-pane{
+  /* height: 75vh; */
+  /* border: 1px solid black; */
+  padding: 20px;
+}
+*{
+  text-decoration: none !important;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.padding-hover:hover{
+  /* padding:10px !important; */
+  /* margin-bottom: 100px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width:768px) {
+  .margin-edit{
+      margin: 0% 1% !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.vertical-align{
+align-content: end !important;
+align-items: end !important;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width:100px) and (max-width: 768px) {
+.col-pad {
+  padding: 0 !important;
+}  
+.cards-detail>.tab-pane{
+  padding: 10px;
+}
+}
+.col-pad {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ====================Model-css=================== */
+
+.model-main-div{
+margin: 10% 2%;
+float: right !important;
+position: fixed !important;
+bottom: -10%;
+z-index: 2000;
 }
+
+.menu-btn{
+padding: 15px 20px !important;
+border-radius: 50% !important;
+color: white !important;
+/* width: 50px; */
+/* height: 50px; */
+background-color: black !important;
+}
+.menu-btn>p{
+font-size: 16px !important;
+margin: 0px !important;
+}
+.menu-btn>i{
+font-size: 20px !important;
+}
+
+.menu-li-edit{
+list-style-type: none;
+}
+
+.li-anker{
+text-decoration: none !important;
+color: black;
+}
+
+.active{
+/* background-color: green; */
+}
+.selected-nav-link.active{
+background-color: #198754 !important;
+color: white !important;
+font-weight: 700;
+}
+
+.selected-nav-link{
+color: #198754 !important;
+}
+
+
+.modal-body-edit{
+top: 3% !important;
+right: 85%;
+}
+@media (min-width:769px) and (max-width:1024px) {
+.modal-body-edit{
+  top: 0% !important;
+  right: 50% !important;
+  width: 80% !important;
+  /* margin: 0 auto; */
+}
+}
+
+@media (min-width:426px) and (max-width:768px) {
+.modal-body-edit{
+  top: 0% !important;
+  right: 33%;
+  width: 80% !important;
+  margin: 0 auto;
+}
+}
+
+
+@media (min-width:100px) and (max-width:426px) {
+.modal-body-edit{
+  top: 0% !important;
+  left: 0%;
+  width: 80% !important;
+  margin: 0 auto;
+}
+.model-main-div{
+  margin: 10% 2%;
+  float: right !important;
+  position: fixed !important;
+  bottom: -5%;
+  z-index: 2000;
+}
+}
+
+.cards_search_food{
+ 
+}
+
+
+.cards_search_food{
+}
+
+
+/* ==============Model-css-end===================== */
