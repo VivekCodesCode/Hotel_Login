@@ -25,6 +25,8 @@ function Item(props) {
         if (val != 1){ 
             newval(val - 1);
             // dispatch(set_quantity.withdrawMoney(key));   
+            dispatch(actionCreators.set_quantity_decrease(key));
+            amount.forEach(item => console.log(item));
         }
         else {
           //props.index

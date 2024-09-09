@@ -42,3 +42,12 @@ export const hotel_id = (data) => {
     });
   };
 };
+
+export const set_quantity_decrease = (data) => {
+  return (dispatch) => {
+    dispatch({
+      type: 'set_quantity_decrease',
+      payload: data
+    });
+  };
+};

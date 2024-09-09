@@ -35,6 +35,20 @@ const reducer = (state = initialState, action) => {
         ...state,
         firstArray: updatedArray
       };
+      case 'set_quantity_decrease':
+        console.log('Action payload:', action.payload); // Log the action payload
+        const updatedArray2 = state.firstArray.map(val => {
+          if (val.title === action.payload) {
+            console.log('Updating item:', val); // Log the item being updated
+            return { ...val, quantity: val.quantity -1};
+          }
+          return val;
+        });
+        console.log('Updated firstArray:', updatedArray2); // Log the updated array
+        return {
+          ...state,
+          firstArray: updatedArray2
+        };   
     case 'hotel_id':
       console.log('Action payload for hotel_id:', action.payload); // Log the action payload
       return {
