@@ -23,7 +23,7 @@
     background-color: #1A2B23;
 }
 
-@media (min-width:376px) and (max-width:767px) {
+@media (min-width:326px) and (max-width:767px) {
     .layout {
         
         margin: 19% 0% 5% 6% !important;

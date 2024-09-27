@@ -85,22 +85,13 @@ const Cards = () => {
                                     <button  className="nav-link selected-nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All Items</button>
                                 </li>
                                 
-                            <li className="nav-item shadow-sm mb-1" role="presentation">
-                                <button className="nav-link selected-nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">South Indian</button>
-                                
-                            </li>
-                            <li className="nav-item shadow-sm mb-1" role="presentation">
-                                <button className="nav-link selected-nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Snacks</button>
-                            </li>
+                            
+                            
                             <li className="nav-item shadow-sm mb-1" role="presentation">
                                 <button className="nav-link selected-nav-link" id="pills-contact-tab1" data-bs-toggle="pill" data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact1" aria-selected="false">Breads</button>
                             </li>
-                            <li className="nav-item shadow-sm mb-1" role="presentation">
-                                <button className="nav-link selected-nav-link" id="pills-contact-tab2" data-bs-toggle="pill" data-bs-target="#pills-contact2" type="button" role="tab" aria-controls="pills-contact2" aria-selected="false">Salads</button>
-                            </li>
-                            <li className="nav-item shadow-sm mb-1" role="presentation">
-                                <button className="nav-link selected-nav-link" id="pills-contact-tab3" data-bs-toggle="pill" data-bs-target="#pills-contact3" type="button" role="tab" aria-controls="pills-contact3" aria-selected="false">Beverage</button>
-                            </li>
+                            
+                            
                             <li className="nav-item shadow-sm mb-1" role="presentation">
                                 <button className="nav-link selected-nav-link" id="pills-contact-tab4" data-bs-toggle="pill" data-bs-target="#pills-contact4" type="button" role="tab" aria-controls="pills-contact4" aria-selected="false">Sweets</button>
                             </li>
