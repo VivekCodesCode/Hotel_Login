@@ -1,10 +1,12 @@
 import React from "react";
 import Item from "./Item";
 import Navbar from "./Navbar";
+import { actionCreators } from "../State";
 import Catr_button from "./Catr_button";
 import Button from 'react-bootstrap/Button';
 import { useSelector } from "react-redux";
 import "../CSS/Item.css";
+import { useDispatch } from "react-redux";
 import "../CSS/Login.css";
 import axios from "axios";
 
@@ -13,18 +15,23 @@ function Cart() {
   const amount = useSelector((state) => state.amount.firstArray); // useSelector hook to read the state
   const amount2 = useSelector((state) => state.amount.secondArray); 
   const hotel_id = useSelector((state) => state.amount.thirdArray);
+  const dispatch=useDispatch();
     console.log("babu babu---->"+hotel_id)
   console.log("Amount array:", amount); // Log the amount array to verify its contents
-  function place_final_order(params) {
-    axios.post("https://hotelloginbackend.onrender.com/api/final_order",{amount,amount2:[amount2[0]]})
+ async function place_final_order(params) {
+  dispatch(actionCreators.empty_cart())
+    console.log("items deleted");
+    alert("Order Placed");
+  await  axios.post("https://hotelloginbackend.onrender.com/api/final_order",{amount,amount2:[amount2[0]]})
     .then((res) => {
         console.log(res.data);
+        
     })
     .catch((error) => {
         console.error(error);
     });
-
-   console.log("he he he he"+hotel_id);
+    
+  
   }
   return (
     <>

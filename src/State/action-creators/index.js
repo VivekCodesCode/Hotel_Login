@@ -51,3 +51,11 @@ export const set_quantity_decrease = (data) => {
     });
   };
 };
+export const empty_cart = (data) => {
+  return (dispatch) => {
+    dispatch({
+      type: 'empty_cart',
+      payload: data
+    });
+  };
+};

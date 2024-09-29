@@ -3,7 +3,7 @@ const initialState = {
   secondArray: [],
   thirdArray: [],
 };
-
+//First array is for items in cart
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'deposit':
@@ -54,6 +54,12 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         thirdArray: [...state.thirdArray,action.payload]
+      };
+      case 'empty_cart':
+      console.log('Action payload for hotel_id:', action.payload); // Log the action payload
+      return {
+        ...state,
+        firstArray:[],
       };
     default:
       return state;
