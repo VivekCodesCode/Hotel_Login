@@ -8,7 +8,7 @@
     font-family: Arial, sans-serif;
 }  */
   .table_wrapper{
-    background-color: #1A2B23;
+    background-color: #708078;
     padding-top: 7%;
   }
 
@@ -20,10 +20,10 @@
     height:100rem !important;
 }
 .layout{
-    background-color: #1A2B23;
+    background-color: #708078;
 }
 
-@media (min-width:326px) and (max-width:767px) {
+@media (min-width:226px) and (max-width:767px) {
     .layout {
         
         margin: 19% 0% 5% 6% !important;
